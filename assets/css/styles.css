@@ -1,0 +1,29 @@
+/* Variables */
+::root{
+   --main-color: #ffffff;
+   --secondary-color: #04B4E0;
+   --backgroud-color: #f2f7f9;
+   --trasnparent-color: transparent;
+   --icon-color: #b5b6b7;
+   --subtitle-color: #888;
+   --title-color: #222222;
+   --text-color: #555; 
+}
+
+/* General styles */
+html{
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+}
