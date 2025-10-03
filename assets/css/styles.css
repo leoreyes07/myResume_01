@@ -1,17 +1,19 @@
 /* Variables */
-::root{
-   --main-color: #ffffff;
-   --secondary-color: #04B4E0;
-   --backgroud-color: #f2f7f9;
-   --trasnparent-color: transparent;
-   --icon-color: #b5b6b7;
-   --subtitle-color: #888;
-   --title-color: #222222;
-   --text-color: #555; 
+
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #04B4E0;
+    --backgroud-color: #f2f7f9;
+    --trasnparent-color: transparent;
+    --icon-color: #b5b6b7;
+    --subtitle-color: #888;
+    --title-color: #222222;
+    --text-color: #555;
 }
 
 /* General styles */
-html{
+
+html {
     font-size: 10px;
 }
 
@@ -22,8 +24,83 @@ body {
     font-size: 1.5rem;
     background-color: var(--backgroud-color);
     color: var(--text-color);
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--title-color);
+}
+
+/* Background image */
+
+body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
+    background-color: #E3E2E2;
+}
+
+/* Main container */
+
+.layout {
+    position: relative;
+    min-width: 1290px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "sidebar main";
+
+    /* Shadow behind layout */
+    border-radius: 4rem;
+    box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+}
+
+/* Aside bar */
+
+.layout__aside {
+    grid-area: sidebar;
+
+    border-radius: 4rem 0 0 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.aside__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-height: 100%;
+    min-width: 30rem;
+
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.user-info__cont-img {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    margin-top: 7rem;
+    background-color: var(--main-color);
+    border: 0.3rem solid var(--main-color);
+    border-radius: 40rem;
+    overflow: hidden;
+}
+
+.user-info__image {
+    width: 100%;
+}
+/* Main container */
+
+.layout__content {
+    grid-area: main;
+
 }
