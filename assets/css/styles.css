@@ -27,7 +27,7 @@ body {
     overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
     color: var(--title-color);
 }
 
@@ -89,15 +89,39 @@ body {
     display: inline-block;
     width: 18rem;
     margin-top: 7rem;
-    background-color: var(--main-color);
-    border: 0.3rem solid var(--main-color);
-    border-radius: 40rem;
-    overflow: hidden;
+    
 }
 
 .user-info__image {
     width: 100%;
+    background-color: var(--main-color);
+    border: 0.3rem solid var(--main-color);
+    border-radius: 40rem;
+    z-index: 1;
+    position: relative;
 }
+
+.user-info__cont-img::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    opacity: 0.4;
+    border-radius: 30rem;
+}
+
+.user-info__name {
+    font-size: 3.2rem;
+    color: var(--main-color);
+}
+
+
+
 /* Main container */
 
 .layout__content {
