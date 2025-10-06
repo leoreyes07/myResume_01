@@ -3,8 +3,8 @@
 :root {
     --main-color: #ffffff;
     --secondary-color: #04B4E0;
-    --backgroud-color: #f2f7f9;
-    --trasnparent-color: transparent;
+    --background-color: #efecec;
+    --transparent-color: transparent;
     --icon-color: #b5b6b7;
     --subtitle-color: #888;
     --title-color: #222222;
@@ -22,13 +22,13 @@ body {
     height: auto;
     font-family: "Poppins", Helvetica, sans-serif;
     font-size: 1.5rem;
-    background-color: var(--backgroud-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, a {
-    color: var(--title-color);
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-color);
 }
 
 /* Background image */
@@ -38,7 +38,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -20px -120px;
-    background-color: #E3E2E2;
+    background-color: var(--background-color);
 }
 
 /* Main container */
@@ -52,10 +52,9 @@ body {
     margin: 10vh auto;
 
     display: grid;
-    grid-template-columns: 30% 70%;
     grid-template-areas:
-        "sidebar main";
-
+        "aside content";
+    grid-template-columns: 30% 70%;
     /* Shadow behind layout */
     border-radius: 4rem;
     box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
@@ -64,11 +63,12 @@ body {
 /* Aside bar */
 
 .layout__aside {
-    grid-area: sidebar;
+    grid-area: aside;
 
     border-radius: 4rem 0 0 4rem;
     overflow: auto;
     overflow-x: hidden;
+
 }
 
 .aside__user-info {
@@ -81,6 +81,10 @@ body {
     min-width: 30rem;
 
     background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.aside__user-info a {
     color: var(--main-color);
 }
 
@@ -116,15 +120,82 @@ body {
 }
 
 .user-info__name {
+    margin-top: 2.6rem;
     font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.user-info__job {
+    font-size: 1.7rem;
+    font-weight: 200;
     color: var(--main-color);
 }
 
 
 
+.user-info__links {
+    margin-bottom: 3.6rem;
+}
+
+.links__social {
+    margin-top: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.social-option {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    opacity: 0.8;
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;       
+}
+
+.social-option:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 5px;
+}
+
+.user-info__buttons {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.user-info__btn {
+    padding: 3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+    transition: all 400ms ease-in-out;
+}
+
+.user-info__btn:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.user-info__footer {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+
+.layout__menu {
+    display: none !important;
+}
+
 /* Main container */
 
 .layout__content {
-    grid-area: main;
+    grid-area: content;
 
 }
