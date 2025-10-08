@@ -189,13 +189,49 @@ body {
 }
 
 
-.layout__menu {
-    display: none !important;
-}
+
 
 /* Main container */
 
 .layout__content {
     grid-area: content;
+    height: 100%;
+    min-height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 0 10rem 10rem 0;
+}
 
+.content__page {
+    min-height: 100%;
+    background-color: var(--main-color);
+    border-radius: 2.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__name {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.page__job {
+    font-size: 2.1rem;
+    font-weight: lighter;
+    color: var(--subtitle-color);
+}
+
+
+
+
+
+
+
+
+
+.layout__menu {
+    display: none !important;
 }
