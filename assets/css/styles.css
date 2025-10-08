@@ -133,7 +133,6 @@ body {
 }
 
 
-
 .user-info__links {
     margin-bottom: 3.6rem;
 }
@@ -188,9 +187,6 @@ body {
     font-size: 1.1rem;
 }
 
-
-
-
 /* Main container */
 
 .layout__content {
@@ -224,14 +220,50 @@ body {
     color: var(--subtitle-color);
 }
 
-
-
-
-
-
-
-
+/* aside menu nav bar */
 
 .layout__menu {
-    display: none !important;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -110px;
+    min-width: 11rem;
+    background-color: var(--transparent-color);
+}
+
+.menu_list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 60%;
+    min-height: 32rem;
+    padding: 2rem ;
+    margin-left: 2.5rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 1.8rem;
+}
+
+.menu__option {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu__icon {
+    color: var(--icon-color);
+    font-size: 2.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__option:hover .menu__icon{
+    color: var(--secondary-color);
+}
+
+.menu__overlay {
+    opacity: 0;
+    display: none;
 }
