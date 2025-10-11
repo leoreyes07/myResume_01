@@ -244,7 +244,7 @@ body {
     margin-left: 2.5rem;
     background-color: var(--main-color);
     box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
-    border-radius: 1.8rem;
+    border-radius: 2rem;
 }
 
 .menu__option {
@@ -264,6 +264,19 @@ body {
 }
 
 .menu__overlay {
+    position: absolute;
+    right: 0;
+    margin-top: -3rem;
     opacity: 0;
-    display: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    white-space: nowrap;
+    transition: all 400ms ease-in-out;
+}
+
+.menu__option:hover .menu__overlay {
+    opacity: 1;
+    right: 75%;
 }
