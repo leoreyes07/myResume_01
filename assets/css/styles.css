@@ -27,7 +27,7 @@ body {
     overflow: hidden;
 }
 
-h1, h2, h3, /* h4 */, h5, h6 {
+/* h1, */ /* h2, */ /* h3, */ /* h4, */ h5, h6 {
     color: var(--main-color);
 }
 
@@ -279,4 +279,16 @@ body {
 .menu__option:hover .menu__overlay {
     opacity: 1;
     right: 75%;
+}
+
+
+/* About me */
+
+.content__about {
+    height: 100%;
+    min-height: 100%;
+    padding: 6rem;
+    padding-right: 3rem;
+    overflow: auto;
+    display: block;
 }
