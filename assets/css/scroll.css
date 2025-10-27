@@ -33,7 +33,13 @@
 
 .content__page {
     scrollbar-width: thin;
-    scrollbar-color: var(--color-background--scrollbar) transparent;
+    scrollbar-color: var(--color--scrollbar) transparent;
+}
+
+
+.layout__aside {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) var(--secondary-color);
 }
 
 /* Scroll Chrome aside bar */
