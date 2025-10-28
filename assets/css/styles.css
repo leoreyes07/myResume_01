@@ -317,3 +317,36 @@ body {
 .title__color {
     color: var(--secondary-color);
 }
+
+/* personal information */
+
+.about__personal-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal__info-bio {
+    flex-basis: 56%;
+}
+
+.personal__info-description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.personal__info-data {
+    flex-basis: 44%;
+    padding: 0 1.5rem;
+}
+
+.personal__info-option {
+    margin-bottom: 1rem;
+}
+
+.personal__info-title {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
