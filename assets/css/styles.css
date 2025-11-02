@@ -334,6 +334,7 @@ body {
 .personal__info-description {
     font-size: 1.5rem;
     line-height: 2.4rem;
+    text-align: left;
 }
 
 .personal__info-data {
@@ -349,4 +350,61 @@ body {
     margin-right: 0.5rem;
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+/* Services */
+
+.about__services {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header {
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.services__title {
+    font-size: 2.1rem;
+}
+
+.services__title::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    top: 16px;
+    right: 5px;
+}
+
+.services__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services__service {
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 3.2rem;
+}
+
+.service__icon-solid {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+
+.service__title {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.service__description {
+    font-size: 1.5rem;
+    text-align: justify;
 }
