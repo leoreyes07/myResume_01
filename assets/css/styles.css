@@ -9,6 +9,8 @@
     --subtitle-color: #888;
     --title-color: #222222;
     --text-color: #555;
+    --border-color: #E5E6E7;
+    --company-color: #A5A6A7;
 }
 
 /* General styles */
@@ -27,8 +29,8 @@ body {
     overflow: hidden;
 }
 
-/* h1, */ /* h2, */ /* h3, */ /* h4, */ h5, h6 {
-    color: var(--main-color);
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
 }
 
 /* Background image */
@@ -352,21 +354,24 @@ body {
     font-weight: bold;
 }
 
-/* Services */
+/* Shared styles */
 
-.about__services {
+.about__services,
+.about__reviews {
     width: 100%;
     margin-bottom: 3rem;
 }
 
-.services__header {
+.services__header,
+.reviews__header {
     display: inline-block;
     padding-right: 1.2rem;
     margin-bottom: 2.5rem;
     position: relative;
 }
 
-.services__title {
+.services__title,
+.reviews__title {
     font-size: 2.1rem;
 }
 
@@ -380,6 +385,8 @@ body {
     top: 16px;
     right: 5px;
 }
+
+/* Services */
 
 .services__container {
     width: 100%;
@@ -407,4 +414,75 @@ body {
 .service__description {
     font-size: 1.5rem;
     text-align: justify;
+}
+
+
+/* Reviews */
+
+.reviwes__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reviwes__reviwe {
+    flex-basis: calc(50% - 2.5rem);
+
+    border: 2px solid var(--border-color);
+    border-radius: 2rem;
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem; 
+}
+
+.reviews__image-container {
+    width: 100%;
+}
+
+.reviews__full-img {
+    max-width: 9rem;
+    max-height: 9rem;
+    border-radius: 9rem;
+    margin: 0 auto;
+    margin-top: -4.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.22);
+}
+
+.review__description {
+    margin-bottom: 1rem;
+}
+
+.review__text {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.review__author {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review__name {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;    
+}
+
+.review__company {
+    color: var(--company-color);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.review__icon {
+    font-size: 4rem;
+    opacity: 0.5;
+    color: var(--secondary-color);
 }
