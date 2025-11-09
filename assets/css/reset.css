@@ -30,6 +30,7 @@ ul, ol {
 a {
     display: block;
     text-decoration: none;
+    color: var(--text-color);
 }
 
 p a {

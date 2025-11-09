@@ -364,7 +364,8 @@ body {
 .about__services,
 .about__reviews,
 .about__cutomers,
-.about__price {
+.about__price,
+.about__extra {
     width: 100%;
     margin-bottom: 3rem;
 }
@@ -372,7 +373,8 @@ body {
 .services__header,
 .reviews__header,
 .costumers__header,
-.price__header {
+.price__header,
+.extra__header {
     display: inline-block;
     padding-right: 1.2rem;
     margin-bottom: 2.5rem;
@@ -382,14 +384,16 @@ body {
 .services__title,
 .reviews__title,
 .cutomers__title,
-.price__title {
+.price__title,
+.extra__title {
     font-size: 2.1rem;
 }
 
 .services__title::after,
 .reviews__title::after,
 .cutomers__title::after,
-.price__title::after {
+.price__title::after,
+.extra__title::after {
     content: "";
     position: absolute;
     width: 28px;
@@ -602,7 +606,7 @@ body {
 
 .price__acquire {
     padding-top: 2.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .price__btn {
@@ -618,4 +622,9 @@ body {
     background-color: var(--secondary-color);
     color: var(--main-color);
     border: 2px solid var(--secondary-color);
+}
+
+.price__description {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
 }
