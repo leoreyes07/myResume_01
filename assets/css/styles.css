@@ -289,7 +289,7 @@ body {
     right: 75%;
 }
 
-/* Genarl Styles - About me and other pages */
+/* General Styles - About me and other pages */
 
 .content__about,
 .content__resume {
@@ -325,7 +325,8 @@ body {
     right: -15px;
 }
 
-.title__color {
+.title__color,
+.subtitle__color {
     color: var(--secondary-color);
 }
 
@@ -363,13 +364,14 @@ body {
     font-weight: bold;
 }
 
-/* Shared styles */
+/* General styles */
 
 .about__services,
 .about__reviews,
 .about__cutomers,
 .about__price,
-.about__extra {
+.about__extra,
+.resume__header {
     width: 100%;
     margin-bottom: 3rem;
 }
@@ -378,7 +380,8 @@ body {
 .reviews__header,
 .costumers__header,
 .price__header,
-.extra__header {
+.extra__header,
+.resume__subheader {
     display: inline-block;
     padding-right: 1.2rem;
     margin-bottom: 2.5rem;
@@ -389,7 +392,8 @@ body {
 .reviews__title,
 .cutomers__title,
 .price__title,
-.extra__title {
+.extra__title,
+.resume__subtitle {
     font-size: 2.1rem;
 }
 
@@ -397,7 +401,8 @@ body {
 .reviews__title::after,
 .cutomers__title::after,
 .price__title::after,
-.extra__title::after {
+.extra__title::after,
+.resume__subtitle::after {
     content: "";
     position: absolute;
     width: 28px;
