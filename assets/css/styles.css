@@ -313,8 +313,7 @@ body {
     position: relative;
 }
 
-.about__title::after,
-.resume__title::after {
+.about__title::after {
     content: "";
     position: absolute;
     width: 30px;
@@ -741,6 +740,41 @@ body {
 .timelines__details {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+}
+
+
+.timelines__devider {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: -18px;
+    width: 1px;
+    background-color: var(--border-color);
+}
+
+.timelines__devider::before {
+    content: "";
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--secondary-color);
+    border-radius: 10rem;
+    opacity: 0.25;
+}
+
+.timelines__devider::after {
+    content: "";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.4rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--main-color);
+    border-radius: 10rem;
+    border: 2px solid var(--secondary-color);
+    opacity: 1;
 }
 
 .resume__right {
