@@ -572,7 +572,8 @@ body {
     margin-right: 0rem;
 }
 
-.price__box:hover, .extra__info:hover {
+.price__box:hover,
+.extra__info:hover {
     box-shadow: 0 18px 24px -5px rgba(0, 0, 0, 0.15);
     transform: translateY(-1rem);
 }
@@ -822,14 +823,37 @@ body {
     border-radius: 1rem;
 }
 
-.skills_percentage--p1 {width: 60%;}
-.skills_percentage--p2 {width: 45%;}
-.skills_percentage--p3 {width: 40%;}
-.skills_percentage--p4 {width: 90%;}
-.skills_percentage--p5 {width: 60%;}
-.skills_percentage--p6 {width: 45%;}
-.skills_percentage--p7 {width: 40%;}
-.skills_percentage--p8 {width: 90%;}
+.skills_percentage--p1 {
+    width: 60%;
+}
+
+.skills_percentage--p2 {
+    width: 45%;
+}
+
+.skills_percentage--p3 {
+    width: 40%;
+}
+
+.skills_percentage--p4 {
+    width: 90%;
+}
+
+.skills_percentage--p5 {
+    width: 60%;
+}
+
+.skills_percentage--p6 {
+    width: 45%;
+}
+
+.skills_percentage--p7 {
+    width: 40%;
+}
+
+.skills_percentage--p8 {
+    width: 90%;
+}
 
 .knowledge__list {
     display: flex;
@@ -844,4 +868,55 @@ body {
     background-color: var(--secondary-color);
     border-radius: 0.3rem;
     color: var(--main-color);
+}
+
+.certificate_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.certificate__certificate {
+    flex-basis: calc(50% - 1.5rem);
+    border: 2px solid var(--border-color);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.certificate__logo {
+    width: 15rem;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate__image {
+    width: 100%;
+}
+
+.certificate__content {
+    padding: 2rem 2.5rem;
+}
+
+.certificate__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.certificate__id {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--subtitle-color);
+}
+
+.certificate__date {
+    font-size: 1.2rem;
+    color: var(--subtitle-color);
+    opacity: 0.8;
 }
