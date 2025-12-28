@@ -1057,7 +1057,7 @@ body {
 
 .article__mask {
     width: 100%;
-    height: 27.5rem;
+    height: 22.5rem;
     overflow: hidden;
 }
 
@@ -1068,4 +1068,23 @@ body {
 
 .article__top:hover .article__image {
     transform: scale(1.1);
+}
+
+.article__logo {
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+}
+
+.article__icon {
+    position: absolute;
+    font-size: 4.4rem;
+    width: 4.4rem;
+    top: calc(50% - 2.2rem);
+    left: calc(50% - 2.2rem);
+    text-align: center;
+    color: var(--main-color);
+}
+
+.article__top:hover .article__logo {
+    opacity: 1;
 }
