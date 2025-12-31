@@ -1111,3 +1111,39 @@ body {
 .article__title {
     font-size: 1.8rem;
 }
+
+/* Contact page  */
+
+.contact__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.conatact__info {
+    flex-basis: 33%;
+    padding: 0 1.5rem;
+}
+
+.contact__data {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+.contact__icon {
+    font-size: 3.3rem;
+    color: var(--secondary-color);
+}
+
+.contact__subtitle {
+    font-size: 1.5rem;
+}
+
+.conatact__form--box {
+    flex-basis: 66%;
+    padding: 0 1.5rem;
+}
+
