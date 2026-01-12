@@ -18,9 +18,14 @@
     .article__image {
         max-width: 111%;
     }
+
+    .article__mask {
+        height: 20rem;
+    }
 }
 
 @media (max-width: 1160px) {
+
     .layout {
         width: 85%;
         margin-left: 1.5rem;
@@ -37,6 +42,15 @@
     .user-info__btn {
         font-size: 1.4rem;
     }
+
+    .article__mask {
+        height: 18rem;
+    }
+
+    .article__title {
+        font-size: 1.4rem;
+    }
+
 }
 
 @media (max-width: 1124px) {
@@ -80,7 +94,7 @@
 
 @media (max-width: 800px) {
 
-    .reviwes__container{
+    .reviwes__container {
         flex-direction: column;
     }
 
@@ -105,6 +119,14 @@
 
     .price__box:last-child {
         margin-top: 2rem;
+    }
+
+    .gallery__item {
+        flex-basis: 50%;
+    }
+
+    .article__articles {
+        flex-basis: 100%;
     }
 
 }
