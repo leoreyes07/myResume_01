@@ -239,7 +239,7 @@ body {
     background-color: var(--transparent-color);
 }
 
-.menu_list {
+.menu__list {
     position: relative;
     display: flex;
     flex-direction: column;
