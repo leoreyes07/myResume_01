@@ -81,6 +81,7 @@
     }
 
     .layout__menu--toggle {
+        z-index: 9999;
         display: block;
         position: absolute;
         right: 1rem;
@@ -97,9 +98,22 @@
         transition: all 300ms ease-in-out;
     }
 
+
+    .menu-toggle__icon {
+        color: var(--main-color);
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 29%;
+        transition: all 600ms ease-in-out;
+    }
+
+    .fa-bars {
+        opacity: 1;
+    }
+
     .fa-xmark {
-        /*  provisional */
-        display: none;
+        opacity: 0;
     }
 
     .layout__aside {
@@ -115,7 +129,7 @@
         border-radius: 0;
         transition: all 300ms ease-in-out;
 
-                margin-right: -100%;
+        margin-right: -100%;
         opacity: 0;
     }
 
@@ -125,7 +139,7 @@
         opacity: 1;
     }
 
-    .layout__aside--visible {
+    .layout__aside--hidden {
         margin-right: -100%;
         opacity: 0;
     }
