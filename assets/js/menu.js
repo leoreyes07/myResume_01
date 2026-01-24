@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
             icon_bars.style.opacity = 1;
             icon_x.style.opacity = 0;
         }
+    });
+
+    window.addEventListener("rezise", () => {
+        let size = parseInt(document.body.clientWidth);
+
+        if (size <= 1060) {
+            aside.classList.remove("layout__aside--visible");
+            icon_bars.style.opacity = 1;
+            icon_x.style.opacity = 0;
+        }
     })
 
 })
