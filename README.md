@@ -1,4 +1,4 @@
-📄 Fede Reyes — Frontend Developer
+📄 Fede Reyes - Frontend Developer
 
 Welcome to my online resume! This repository contains the source and content for my personal resume website hosted with GitHub Pages.
 

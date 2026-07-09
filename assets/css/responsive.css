@@ -238,6 +238,23 @@
         height: 100%;
         width: 100%;
     }
+
+    .content__about,
+    .content__resume,
+    .content__portfolio,
+    .content__blog,
+    .content__contact {
+        padding: 3.5rem 2.5rem;
+    }
+
+    .about__header,
+    .resume__header,
+    .portfolio__header,
+    .blog__header,
+    .contact__header,
+    .contact__form--header {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -249,6 +266,7 @@
     .reviwes__reviwe {
         margin-top: 5rem;
         flex-basis: 100%;
+        margin-right: 0;
     }
 
     .cutomers__container {
@@ -285,10 +303,24 @@
         flex-direction: column;
     }
 
+    .personal__info-description {
+        text-align: center;
+    }
+
     .personal__info-data {
         flex-basis: 100%;
         padding: 0;
         margin-top: 2rem;
+        text-align: center;
+    }
+
+    .personal__info-list {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .about__services {
+        text-align: center;
     }
 
     .services__container {
@@ -300,6 +332,7 @@
         flex-basis: 100%;
         margin-right: 0;
         margin-bottom: 3rem;
+        text-align: center;
     }
 
     .extra__container {
@@ -354,5 +387,39 @@
         max-height: 100%;
     }
 
+    .content__about,
+    .content__resume,
+    .content__portfolio,
+    .content__blog,
+    .content__contact {
+        padding: 2.2rem 1.5rem;
+    }
 
+    .about__header,
+    .resume__header,
+    .portfolio__header,
+    .blog__header,
+    .contact__header,
+    .contact__form--header {
+        margin-bottom: 2rem;
+    }
+
+    .reviwes__reviwe {
+        text-align: center;
+    }
+
+    .review__author {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .certificate__certificate {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certificate__logo {
+        width: 100%;
+        padding: 1.5rem;
+    }
 }
